@@ -10,7 +10,7 @@ RUN apt-get -qq -y update && apt-get -qq -y upgrade && apt-get -qq install -y so
         m4 libtool qt4-qmake make libqt4-dev libcurl4-openssl-dev \
         libcrypto++-dev libsqlite3-dev libc-ares-dev \
         libsodium-dev libnautilus-extension-dev \
-        libssl-dev libfreeimage-dev swig apache2-utils
+        libssl-dev libfreeimage-dev swig nginx apache2-utils
 
 
 WORKDIR /usr/src/app
