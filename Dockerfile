@@ -49,7 +49,8 @@ ENV LANG C.UTF-8
 ENV TZ Asia/Kolkata
 RUN curl https://rclone.org/install.sh | bash
 COPY . .
-
+COPY default.conf.template /etc/nginx/conf.d/default.conf.template
+COPY nginx.conf /etc/nginx/nginx.conf
 RUN npm install
 
 COPY requirements.txt .
