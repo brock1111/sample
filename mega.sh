@@ -7,7 +7,7 @@ while read username password; do
         echo -e "\n>>> $username"
         
 
-        mega-login $username $password >&5
+        mega-login $username $password
 
         if [ ! $? -eq 0 ]; then
                 echo "Unable to login as $username"
