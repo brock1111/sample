@@ -5,7 +5,7 @@ while read email pass; do
         echo -e "\n>>> $email"
         mega-login $email $pass
         if [ ! $? -eq 0 ]; then
-                echo "Unable to login as $email"
+                echo "Login failed with $email, So check creds or account expired"
                 continue
         fi
         mega-df -h
