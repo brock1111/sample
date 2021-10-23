@@ -1,4 +1,3 @@
-
 creds=${1:-"creds.csv"}
 mega-logout 1>/dev/null
 IFS=","
