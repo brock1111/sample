@@ -1,4 +1,4 @@
-creds=${1:-"creds.csv"}
+creds=${1:-"creds.txt"}
 mega-logout 1>/dev/null
 IFS=","
 while read email pass; do
